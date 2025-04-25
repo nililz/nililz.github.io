@@ -1,9 +1,11 @@
 import Image from "next/image";
+import { ShootingStarsAndStarsBackground } from "@/components/shooting-stars-background";
 
 export default function Home() {
   return (
-    <div className="flex items-center justify-center min-h-screen p-8 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <section className="rounded-2xl shadow-xl p-10 sm:p-16 flex flex-col items-center text-center gap-8 max-w-md w-full">
+    <div className="relative flex items-center justify-center min-h-screen p-8 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+      <ShootingStarsAndStarsBackground/>
+      <section className="relative z-10 rounded-2xl shadow-xl p-10 sm:p-16 flex flex-col items-center text-center gap-8 max-w-md w-full">
       
         <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start text-center sm:text-left">
           {/* Photo */}
