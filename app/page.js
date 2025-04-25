@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { ShootingStarsAndStarsBackground } from "@/components/shooting-stars-background";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function Home() {
   return (
@@ -30,9 +31,15 @@ export default function Home() {
         </main>
 
         <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-          <a href="https://github.com/nililz" className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/in/nilly-hamidi" className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="mailto:nillyhamidi@gmail.com" className="text-blue-500 hover:underline">Email</a>
+          <a href="https://github.com/nililz" className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">
+          <Github className="w-6 h-6 text-blue-500 hover:text-blue-700 transition" />
+          </a>
+          <a href="https://www.linkedin.com/in/nilly-hamidi" className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">
+          <Linkedin className="w-6 h-6 text-blue-500 hover:text-blue-700 transition" />
+          </a>
+          <a href="mailto:nillyhamidi@gmail.com" className="text-blue-500 hover:underline">
+          <Mail className="w-6 h-6 text-blue-500 hover:text-blue-700 transition" />
+          </a>
         </footer>
       
       </section>
