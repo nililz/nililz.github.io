@@ -63,16 +63,24 @@ export default function Recipes() {
                             </p>
                         
 
-                        <div className="mt-6">
-                            <a
-                            href="https://tastesbetterfromscratch.com/tres-leches-cake/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-blue-300 underline hover:text-blue-500"
-                            >
-                            Recipe Link
-                            </a>
-                        </div>
+                            <div className="mt-6 flex gap-4">
+                                <a
+                                href="https://tastesbetterfromscratch.com/tres-leches-cake/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-blue-300 underline hover:text-blue-500"
+                                >
+                                Recipe Link
+                                </a>
+                                <a
+                                href="https://www.tiktok.com/@ashbaber/video/7479513659320880406?_r=1&_t=ZS-8vqzUSh5igk"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-blue-300 underline hover:text-blue-500"
+                                >
+                                Chai version
+                                </a>
+                            </div>
                         </div>
 
                         <div className="mt-6 md:mt-0 md:ml-6 flex-shrink-0">
