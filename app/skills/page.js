@@ -1,4 +1,10 @@
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/accordion";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/tooltip"
 
 export default function Skills() {
   return (
@@ -16,16 +22,154 @@ export default function Skills() {
             </AccordionContent>
           </AccordionItem>
 
+          {/* TODO: glam up this section */}
           <AccordionItem value="item-2">
             <AccordionTrigger className="text-2xl font-semibold">💻 Technical Skills</AccordionTrigger>
             <AccordionContent className="text-base text-white leading-relaxed">
-              <ul className="list-disc list-inside grid grid-cols-1 sm:grid-cols-2 gap-2">
-                <li>Python, Java, Swift, C, JavaScript, MATLAB, SQL, HTML, CSS, SPL</li>
-                <li>Data Analysis & Visualisation</li>
-                <li>ServiceNow, Splunk, Jira, Microsoft SQL Server, IBM Maximo</li>
-                <li>ITSM, ITIL</li>
-                <li>Data Structures & Algorithms</li>
-              </ul>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <h4 className="font-semibold text-white">Programming Languages</h4>
+                  <ul className="list-disc list-inside">
+                  <li>
+                    <TooltipProvider>
+                      <Tooltip>
+                        <TooltipTrigger asChild>
+                          <span className="inline-block cursor-pointer hover:text-black transition duration-300 underline">
+                            Python
+                          </span>
+                        </TooltipTrigger>
+                        <TooltipContent side="top" className="bg-white text-black rounded shadow-md p-2">
+                          Used in my Data Structures and Algorithm courses
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </li>
+                  <li>
+                  <TooltipProvider>
+                      <Tooltip>
+                        <TooltipTrigger asChild>
+                          <span className="inline-block cursor-pointer hover:text-black transition duration-300 underline">
+                            Java
+                          </span>
+                        </TooltipTrigger>
+                        <TooltipContent side="top" className="bg-white text-black rounded shadow-md p-2">
+                          Used in my Object Oriented Programming Classes
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                    </li>
+                    <li>
+                    <TooltipProvider>
+                      <Tooltip>
+                        <TooltipTrigger asChild>
+                          <span className="inline-block cursor-pointer hover:text-black transition duration-300 underline">
+                            Swift
+                          </span>
+                        </TooltipTrigger>
+                        <TooltipContent side="top" className="bg-white text-black rounded shadow-md p-2">
+                          Programmed a Period Tracking App
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                    </li>
+                    <li>
+                    <TooltipProvider>
+                      <Tooltip>
+                        <TooltipTrigger asChild>
+                          <span className="inline-block cursor-pointer hover:text-black transition duration-300 underline">
+                            C
+                          </span>
+                        </TooltipTrigger>
+                        <TooltipContent side="top" className="bg-white text-black rounded shadow-md p-2">
+                          Used in my Software Security, Computer Architecture and Operating Systems classes
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                    </li>
+                    <li>
+                      <TooltipProvider>
+                        <Tooltip>
+                          <TooltipTrigger asChild>
+                            <span className="inline-block cursor-pointer hover:text-black transition duration-300 underline">
+                              MATLAB, R
+                            </span>
+                          </TooltipTrigger>
+                          <TooltipContent side="top" className="bg-white text-black rounded shadow-md p-2">
+                            Used in my Engineering Numerical Analysis and Data Science classes 
+                          </TooltipContent>
+                        </Tooltip>
+                      </TooltipProvider>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-white">Web Technologies</h4>
+                  <ul className="list-disc list-inside">
+                    <li>
+                    <TooltipProvider>
+                      <Tooltip>
+                        <TooltipTrigger asChild>
+                          <span className="inline-block cursor-pointer hover:text-black transition duration-300 underline">
+                            HTML
+                          </span>
+                        </TooltipTrigger>
+                        <TooltipContent side="top" className="bg-white text-black rounded shadow-md p-2">
+                          Used to program this website!
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                    </li>
+                    <li>
+                    <TooltipProvider>
+                      <Tooltip>
+                        <TooltipTrigger asChild>
+                          <span className="inline-block cursor-pointer hover:text-black transition duration-300 underline">
+                            CSS
+                          </span>
+                        </TooltipTrigger>
+                        <TooltipContent side="top" className="bg-white text-black rounded shadow-md p-2">
+                          Used to program this website! I'm using Tailwind
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                    </li>
+                    <li>
+                    <TooltipProvider>
+                      <Tooltip>
+                        <TooltipTrigger asChild>
+                          <span className="inline-block cursor-pointer hover:text-black transition duration-300 underline">
+                            JavaScript
+                          </span>
+                        </TooltipTrigger>
+                        <TooltipContent side="top" className="bg-white text-black rounded shadow-md p-2">
+                          Used to program this website! I'm using react and next.js
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-white">Tools & Platforms</h4>
+                  <ul className="list-disc list-inside">
+                    <li>ServiceNow</li>
+                    <li>Neo4J</li>
+                    <li>Splunk</li>
+                    <li>Jira</li>
+                    <li>Microsoft SQL Server</li>
+                    <li>IBM Maximo</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-white">Concepts & Methodologies</h4>
+                  <ul className="list-disc list-inside">
+                    <li>Data Analysis & Visualisation</li>
+                    <li>ITSM & ITIL</li>
+                    <li>Agile</li>
+                    <li>Data Structures & Algorithms</li>
+                  </ul>
+                </div>
+              </div>
             </AccordionContent>
           </AccordionItem>
 
