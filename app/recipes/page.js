@@ -10,7 +10,7 @@ import {
 
 export default function Recipes() {
   return (
-    <div className="relative min-h-screen p-8 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="flex items-center justify-center min-h-screen p-8 sm:p-20 font-[family-name:var(--font-geist-sans)]">
 
       <div className="relative z-10 max-w-2xl mx-auto flex flex-col gap-12">
         <h1 className="text-4xl font-extrabold text-center"> My Favourite Recipes</h1>
