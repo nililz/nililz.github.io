@@ -10,12 +10,12 @@ import {
 
 export default function Recipes() {
   return (
-    <div className="flex items-center justify-center min-h-screen p-8 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="flex items-center justify-center min-h-screen p-4 sm:p-8 md:p-20 font-[family-name:var(--font-geist-sans)]">
 
       <div className="relative z-10 max-w-2xl mx-auto flex flex-col gap-12">
-        <h1 className="text-4xl font-extrabold text-center"> My Favourite Recipes</h1>
+        <h1 className="text-3xl sm:text-4xl font-extrabold text-center"> My Favourite Recipes</h1>
 
-        <p className="text-lg text-gray-400 mt-2">
+        <p className="text-base sm:text-lg text-gray-400 mt-2">
             This is a collation of my favourite recipes that I keep going back to, as a very amateur baker. Sourced from various media across the internet. Attached images are my attempts, if I remembered to take a photo (I like to bake... not decorate).
         </p>
 
@@ -23,7 +23,7 @@ export default function Recipes() {
             <CarouselContent>
                 <CarouselItem>
                         {/* Cinnamon apple teacake */}
-                        <article className="flex flex-col md:flex-row bg-white/30 backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-md">
+                        <article className="flex flex-col md:flex-row items-center bg-white/30 backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-md">
                             <div className="flex flex-col justify-between flex-1 h-full">
                                 <h2 className="text-2xl font-semibold mb-4">🍏 Cinnamon Apple Teacake</h2>
                                 <p className="text-white leading-relaxed">
@@ -47,15 +47,15 @@ export default function Recipes() {
                                 <Image
                                 src="/applecake.png"
                                 alt="Apple Cake"
-                                width={200}
-                                height={200}
-                                className="rounded border-4 border-white transition-transform duration-300 hover:scale-105 hover:shadow-lg"
+                                width={150}
+                                height={150}
+                                className="rounded border-4 border-white transition-transform duration-300 hover:scale-105 hover:shadow-lg w-full max-w-[150px] md:max-w-[200px]"
                                 />
                             </div>
                         </article>
                 </CarouselItem>
                 <CarouselItem>
-                    <article className="flex flex-col md:flex-row bg-white/30 backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-md">
+                    <article className="flex flex-col md:flex-row items-center bg-white/30 backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-md">
                         <div className="flex flex-col justify-between flex-1 h-full">
                             <h2 className="text-2xl font-semibold mb-4">🥛 Tres Leches Cake</h2>
                             <p className="text-white leading-relaxed">
@@ -87,15 +87,15 @@ export default function Recipes() {
                             <Image
                             src="/tresleche.png"
                             alt="Tres Leches Cake"
-                            width={200}
-                            height={200}
-                            className="rounded border-4 border-white transition-transform duration-300 hover:scale-105 hover:shadow-lg"
+                            width={150}
+                            height={150}
+                            className="rounded border-4 border-white transition-transform duration-300 hover:scale-105 hover:shadow-lg w-full max-w-[150px] md:max-w-[200px]"
                             />
                         </div>
                     </article>
                 </CarouselItem>
                 <CarouselItem>
-                    <article className="flex flex-col md:flex-row bg-white/30 backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-md">
+                    <article className="flex flex-col md:flex-row items-center bg-white/30 backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-md">
                         <div className="flex flex-col justify-between flex-1 h-full">
                             <h2 className="text-2xl font-semibold mb-4">🍰 Strawberry Cream Cake</h2>
                             <p className="text-white leading-relaxed">
@@ -119,16 +119,16 @@ export default function Recipes() {
                             <Image
                             src="/strawberrycake.png"
                             alt="Strawberry Cake"
-                            width={200}
-                            height={200}
-                            className="rounded border-4 border-white transition-transform duration-300 hover:scale-105 hover:shadow-lg"
+                            width={150}
+                            height={150}
+                            className="rounded border-4 border-white transition-transform duration-300 hover:scale-105 hover:shadow-lg w-full max-w-[150px] md:max-w-[200px]"
                             />
                         </div>
                     </article>
                 </CarouselItem>
                 <CarouselItem>
                     {/* Soft dinner rolls */}
-                    <article className="flex flex-col md:flex-row bg-white/30 backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-md">
+                    <article className="flex flex-col md:flex-row items-center bg-white/30 backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-md">
                     <div className="flex flex-col justify-between flex-1 h-full">
                         <h2 className="text-2xl font-semibold mb-4"> 🍞 Soft Dinner Rolls </h2>
                         <p className="text-white leading-relaxed">
@@ -149,7 +149,7 @@ export default function Recipes() {
                     </article>
                 </CarouselItem>
                 <CarouselItem>
-                    <article className="flex flex-col md:flex-row bg-white/30 backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-md">
+                    <article className="flex flex-col md:flex-row items-center bg-white/30 backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-md">
                         <div className="flex flex-col justify-between flex-1 h-full">
                             <h2 className="text-2xl font-semibold mb-4">🍪 Choc Chip Cookies</h2>
                             <p className="text-white leading-relaxed">
@@ -173,15 +173,15 @@ export default function Recipes() {
                             <Image
                             src="/cookies.png"
                             alt="Cookies"
-                            width={200}
-                            height={200}
-                            className="rounded border-4 border-white transition-transform duration-300 hover:scale-105 hover:shadow-lg"
+                            width={150}
+                            height={150}
+                            className="rounded border-4 border-white transition-transform duration-300 hover:scale-105 hover:shadow-lg w-full max-w-[150px] md:max-w-[200px]"
                             />
                         </div>
                     </article>
                 </CarouselItem>
                 <CarouselItem>
-                    <article className="flex flex-col md:flex-row bg-white/30 backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-md">
+                    <article className="flex flex-col md:flex-row items-center bg-white/30 backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-md">
                         <div className="flex flex-col justify-between flex-1 h-full">
                             <h2 className="text-2xl font-semibold mb-4">🧀 Burnt Cheesecake (?)</h2>
                             <p className="text-white leading-relaxed">
@@ -205,15 +205,15 @@ export default function Recipes() {
                             <Image
                             src="/cheesecake.png"
                             alt="Cheesecake"
-                            width={200}
-                            height={200}
-                            className="rounded border-4 border-white transition-transform duration-300 hover:scale-105 hover:shadow-lg"
+                            width={150}
+                            height={150}
+                            className="rounded border-4 border-white transition-transform duration-300 hover:scale-105 hover:shadow-lg w-full max-w-[150px] md:max-w-[200px]"
                             />
                         </div>
                     </article>
                 </CarouselItem>
                 <CarouselItem>
-                    <article className="flex flex-col md:flex-row bg-white/30 backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-md">
+                    <article className="flex flex-col md:flex-row items-center bg-white/30 backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-md">
                         <div className="flex flex-col justify-between flex-1 h-full">
                             <h2 className="text-2xl font-semibold mb-4">🥨 Puff Pastry Swirls</h2>
                             <p className="text-white leading-relaxed">
@@ -237,15 +237,15 @@ export default function Recipes() {
                             <Image
                             src="/swirls.png"
                             alt="Swirl"
-                            width={200}
-                            height={200}
-                            className="rounded border-4 border-white transition-transform duration-300 hover:scale-105 hover:shadow-lg"
+                            width={150}
+                            height={150}
+                            className="rounded border-4 border-white transition-transform duration-300 hover:scale-105 hover:shadow-lg w-full max-w-[150px] md:max-w-[200px]"
                             />
                         </div>
                     </article>
                 </CarouselItem>
                 <CarouselItem>
-                    <article className="flex flex-col md:flex-row bg-white/30 backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-md">
+                    <article className="flex flex-col md:flex-row items-center bg-white/30 backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-md">
                         <div className="flex flex-col justify-between flex-1 h-full">
                             <h2 className="text-2xl font-semibold mb-4">🍫 Brownies</h2>
                             <p className="text-white leading-relaxed">
