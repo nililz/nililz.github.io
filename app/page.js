@@ -1,11 +1,9 @@
 import Image from "next/image";
-import { ShootingStarsAndStarsBackground } from "@/components/shooting-stars-background";
 import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function Home() {
   return (
     <div className="relative flex items-center justify-center min-h-screen p-8 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <ShootingStarsAndStarsBackground/>
       <section className="relative z-10 rounded-2xl shadow-xl p-10 sm:p-16 flex flex-col items-center text-center gap-8 max-w-md w-full">
       
         <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start text-center sm:text-left">
@@ -20,11 +18,11 @@ export default function Home() {
 
           {/* Intro */}
           <div>
-            <h1 className="text-3xl font-bold">Nilly Hamidi</h1>
-            <p className="text-lg text-gray-600 mt-2">
+            <h1 className="text-3xl font-bold text-white">Nilly Hamidi</h1>
+            <p className="text-lg text-gray-400 mt-2">
               I'm a final year Software Engineering student at Monash University. When I'm not working or studying, I'm either baking, at the gym, looking at cats, or playing The Legend of Zelda.
             </p>
-            <p className="text-lg text-gray-600 mt-2">
+            <p className="text-lg text-gray-400 mt-2">
               Feel free to contact me below! 😊
             </p>
           </div>
