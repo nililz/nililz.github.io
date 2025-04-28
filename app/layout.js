@@ -1,7 +1,18 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/navbar";
+import Link from "next/link";
 import { ShootingStarsAndStarsBackground } from "@/components/shooting-stars-background";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuIndicator,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  NavigationMenuViewport,
+} from "@/components/navigationmenu"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +38,29 @@ export default function RootLayout({ children }) {
         <div className="fixed inset-0 -z-10">
           <ShootingStarsAndStarsBackground />
         </div>
-        <Navbar />
+
+        <nav className="flex justify-end p-4">
+          <NavigationMenu>
+            <NavigationMenuList className="flex space-x-4">
+              <NavigationMenuItem>
+                <NavigationMenuLink href="/" className="text-sm font-medium hover:text-accent">
+                  Home
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuLink href="/skills" className="text-sm font-medium hover:text-accent">
+                  Skills
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuLink href="/recipes" className="text-sm font-medium hover:text-accent">
+                  Recipes
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
+        </nav>
+
         {children}
       </body>
     </html>
